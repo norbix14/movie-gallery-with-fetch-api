@@ -8,17 +8,26 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="./css/styles.css">
 	<title>Sitio de películas</title>
 </head>
 <body>
+	<div class="technical-difficulties d-none" id="technicalDifficulties">
+		<h2>Oh oh! Algo ha fallado</h2>
+	</div>
+	<div class="back-to-top" id="toTop" title="Volver al inicio">
+		<span>
+			<i class="fas fa-chevron-up"></i>
+		</span>
+	</div>
 	<div class="contenedor" id="contenedor">
 		<div class="peliculas" id="peliculas"></div>
 	</div>
-	<div class="paginacion">
+	<div class="paginacion" id="paginacion">
 		<button class="btn-pag" id="btnAnterior">Anterior</button>
 		<button class="btn-pag" id="btnSiguiente">Siguiente</button>
 	</div>
-	<script src="js/app.js" type="module"></script>
+	<script src="./js/main.js"></script>
+	<script type="module" src="./js/app.js"></script>
 </body>
 </html>

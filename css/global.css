@@ -1,0 +1,30 @@
+:root {
+	--bg-main: rgba(36, 23, 68, 1);
+	--bg-secondary: rgba(19, 124, 50, 1);
+	--color-main: rgba(36, 23, 68, 1);
+	--color-secondary: rgba(19, 124, 50, 1);
+	--color-secondary-light: rgba(19, 124, 50, 0.7);
+	--bg-hide-0: rgb(226, 74, 74);
+	--bg-hide-50: rgb(221, 103, 103);
+	--bg-hide-100: rgb(221, 138, 138);
+	--bg-show-0: rgb(84, 190, 51);
+	--bg-show-50: rgb(112, 190, 88);
+	--bg-show-100: rgb(120, 182, 102);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 18px;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: #111;
+	color: #fff;
+}

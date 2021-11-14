@@ -1,0 +1,11 @@
+.d-none {
+	display: none;
+}
+
+.d-block {
+	display: block;
+}
+
+.contenedor {
+	margin: 40px auto 100px auto;
+}

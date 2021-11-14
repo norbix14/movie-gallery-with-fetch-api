@@ -1,0 +1,124 @@
+.back-to-top {
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	bottom: 10px;
+	right: 20px;
+	background-color: rgba(255,255,255,0.6);
+	border-radius: 50%;
+	cursor: pointer;
+	text-align: center;
+	transition: all .2s ease-in-out;
+	display: none;
+	overflow: hidden;
+	z-index: 10;
+}
+
+.back-to-top:hover {
+	background-color: rgba(255,255,255,1);
+}
+
+.back-to-top span {
+	font-size: 2rem;
+	color: #000;
+}
+
+.show {
+	animation: showel 2s;
+}
+
+.rotate {
+	animation: rotation 2s;
+	animation-timing-function: linear;
+}
+
+.hide {
+	animation: hideel 2s;
+}
+
+/* rotation */
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+/* transformation */
+@-webkit-keyframes showel {
+	0% {
+		background-color: var(--bg-show-0);
+		opacity: 0.2;
+	}
+	50% {
+		transform: translateX(-30px);
+		-webkit-transform: translateX(-30px);
+		background-color: var(--bg-show-50);
+		opacity: 0.6;
+	}
+	100% {
+		transform: translateX(0);
+		-webkit-transform: translateX(0);
+		background-color: var(--bg-show-100);
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes hideel {
+	0% {
+		background-color: var(--bg-hide-0);
+		opacity: 1;
+	}
+	50% {
+		transform: translateX(-30px);
+		-webkit-transform: translateX(-30px);
+		background-color: var(--bg-hide-50);
+		opacity: 0.6;
+	}
+	100% {
+		transform: translateX(200%);
+		-webkit-transform: translateX(200%);
+		background-color: var(--bg-hide-100);
+		opacity: 0.2;
+	}
+}
+
+@keyframes showel {
+	0% {
+		background-color: var(--bg-show-0);
+		opacity: 0.2;
+	}
+	50% {
+		transform: translateX(-30px);
+		-webkit-transform: translateX(-30px);
+		background-color: var(--bg-show-50);
+		opacity: 0.6;
+	}
+	100% {
+		transform: translateX(0);
+		-webkit-transform: translateX(0);
+		background-color: var(--bg-show-100);
+		opacity: 1;
+	}
+}
+
+@keyframes hideel {
+	0% {
+		background-color: var(--bg-hide-0);
+		opacity: 1;
+	}
+	50% {
+		transform: translateX(-30px);
+		-webkit-transform: translateX(-30px);
+		background-color: var(--bg-hide-50);
+		opacity: 0.6;
+	}
+	100% {
+		transform: translateX(200%);
+		-webkit-transform: translateX(200%);
+		background-color: var(--bg-hide-100);
+		opacity: 0.2;
+	}
+}

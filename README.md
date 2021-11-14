@@ -12,7 +12,7 @@
 
 ## Aclaración
 
-**Por políticas `CORS`, este ejemplo solo funciona mediante el uso del [`LIVE SERVER`](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer "Live Server") por el momento.**
+**Por los requerimientos de seguridad de los módulos de Javascript, este ejemplo solo funcionará mediante el uso del [`LIVE SERVER`](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer "Live Server"). Sin el uso de éste, se incurrirá en errores de [`CORS`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules#other_differences_between_modules_and_standard_scripts "Diferencias entre módulos y scripts estándar").**
 
 ## Screenshots
 
