@@ -19,6 +19,7 @@
 .pelicula > h3.titulo {
 	font-size: 1rem;
 	font-weight: 600;
+	padding: 5px 8px;
 }
 
 .pelicula > img.poster {
@@ -44,7 +45,7 @@
 
 .item:hover {
 	transform: scale(1.2);
-	color: var(--color-secondary-light);
+	color: #fff;
 }
 
 .item > p {

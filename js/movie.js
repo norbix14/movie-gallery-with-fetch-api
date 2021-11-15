@@ -20,7 +20,7 @@ export default function (data) {
     original_language,
     original_title
   } = data;
-  const src = poster_path !== null ? `${baseURL}${poster_path}` : 'img/movie-icon.png';
+  const src = poster_path !== null ? `${baseURL}${poster_path}` : 'img/no-image-icon.png';
   return `
     <div class="pelicula">
       ${Img({
@@ -31,7 +31,7 @@ export default function (data) {
       <h3 class="titulo">${title}</h3>
       <div class="mas-info">
         ${Item({
-          title: `Descripción: ${overview}`,
+          title: `Descripción: ${overview ? overview : 'No disponible'}`,
           icon: 'fas fa-info-circle'
         })}
         ${Item({

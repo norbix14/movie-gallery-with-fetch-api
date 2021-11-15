@@ -13,6 +13,7 @@ export default function (data = {src: '', title: '', alt: ''}) {
     <img
       class="poster"
       title="${data.title}"
+      srcset="img/movie-icon.png"
       src="${data.src}"
       alt="${data.title}"
       loading="lazy"
